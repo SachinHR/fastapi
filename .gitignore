@@ -1,0 +1,7 @@
+__pycache__
+before_alembic_app/
+before_code_clean_app/
+COPY/
+venu/
+.env
+figure.txt

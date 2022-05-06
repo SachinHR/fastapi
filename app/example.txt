@@ -1,0 +1,50 @@
+1)
+[
+    {
+        "Post": {
+            "title": "sac Top values",
+            "published": true,
+            "owner_id": 15,
+            "content": "Hiii!",
+            "id": 19,
+            "created_at": "2022-05-05T16:20:50.790819+05:30"
+        },
+        "votes": 2
+    },
+]
+
+2)
+[
+    {
+        "title": "2post",
+        "content": "HELLO",
+        "published": true,
+        "id": 2,
+        "created_at": "2022-05-05T13:47:53.416773+05:30",
+        "owner_id": 15,
+        "owner": {
+            "id": 15,
+            "email": "abhi@gmail.com",
+            "created_at": "2022-05-04T17:57:18.092590+05:30"
+        }
+    },
+]
+
+3) Without filter(models.Post.title.contains(search)).limit(limit).offset(skip) in results query before all()
+[
+    {
+        "Post": {
+            "title": "sac Top values",
+            "content": "Hiii!",
+            "published": true,
+            "id": 19,
+            "created_at": "2022-05-05T16:20:50.790819+05:30",
+            "owner_id": 15,
+            "owner": {
+                "id": 15,
+                "email": "abhi@gmail.com",
+                "created_at": "2022-05-04T17:57:18.092590+05:30"
+            }
+        },
+        "votes": 2
+    },
